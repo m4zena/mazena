@@ -7,9 +7,6 @@
   };
 </script>
 
-<h1>Hello!</h1>
-<button onclick={makeRequest}>make dat request</button>
-
 <div class="project-card-section">
   <ProjectCard
     thumbnail={"https://picsum.photos/500/300"}
