@@ -1,12 +1,24 @@
 <script>
   import Searchbar from "$lib/components/searchbar.svelte";
+  import Button from "$lib/components/button.svelte";
 </script>
 
 <nav>
   <ul>
-    <li><h1>Mazena</h1></li>
-    <li><Searchbar /></li>
-    <li></li>
+    <li>
+      <h1>Mazena</h1>
+    </li>
+    <li>
+      <Searchbar />
+    </li>
+    <li>
+      <Button
+        label={"Register a Zena"}
+        onClick={() => {
+          console.log("lol fuck you");
+        }}
+      ></Button>
+    </li>
   </ul>
 </nav>
 

@@ -30,6 +30,11 @@
     background-color: aliceblue;
   }
 
+  .card:hover {
+    cursor: pointer;
+    background-color: darksalmon;
+  }
+
   .card-content {
     display: flex;
     flex-flow: column;
