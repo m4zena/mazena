@@ -11,6 +11,7 @@
     padding: 10px 10px;
     background-color: aliceblue;
     border-radius: 8px;
+    max-width: 150px;
   }
 
   button:hover {

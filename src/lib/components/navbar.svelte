@@ -1,6 +1,9 @@
 <script>
   import Searchbar from "$lib/components/searchbar.svelte";
   import Button from "$lib/components/button.svelte";
+  import RegisterPopup from "$lib/components/register_popup.svelte";
+
+  let modalIsOpen = $state(false);
 </script>
 
 <nav>
@@ -16,11 +19,20 @@
         label={"Register a Zena"}
         onClick={() => {
           console.log("lol fuck you");
+          modalIsOpen = true;
         }}
       ></Button>
     </li>
   </ul>
 </nav>
+
+{#if modalIsOpen}
+  <RegisterPopup
+    closeModal={() => {
+      modalIsOpen = false;
+    }}
+  />
+{/if}
 
 <style>
   nav {
