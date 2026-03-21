@@ -1,10 +1,15 @@
 <script>
-  let { thumbnail, title, author } = $props();
+  import fallbackImage from "$lib/assets/widget_thumbnail_not_found.png";
+  let { thumbnail = null, title, author } = $props();
 </script>
 
 <div class="card">
   <div class="card-content">
-    <img src={thumbnail} alt="Avatar" style="border-bottom:solid" />
+    <img
+      src={thumbnail ?? fallbackImage}
+      alt="Avatar"
+      style="border-bottom:solid"
+    />
     <div class="container">
       <h4><b>{title}</b></h4>
       <p>{author}</p>
