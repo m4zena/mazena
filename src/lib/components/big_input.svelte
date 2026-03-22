@@ -4,12 +4,12 @@
 
 <label>
   {label}
-  <textarea name={label} />
+  <textarea name={label}></textarea>
 </label>
 
 <style>
   textarea {
     padding: 10px 10px;
-    border-radius: 8px;
+    
   }
 </style>
