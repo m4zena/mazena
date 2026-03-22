@@ -4,6 +4,7 @@
   import Button from "$lib/components/button.svelte";
 
   import { api } from "$lib/utils/api.svelte";
+  import { clickOutside } from "$lib/actions/clickOutside.svelte";
 
   let { closeModal } = $props();
 
@@ -13,7 +14,7 @@
 
   const submitZena = async () => {
     try {
-      const response = await api.post("/items", {
+      await api.post("/items", {
         name: name,
         domain: domain,
         jsLink: jsLink,
@@ -28,7 +29,7 @@
 </script>
 
 <div class="modal">
-  <div class="modal-content">
+  <div class="modal-content" use:clickOutside={closeModal}>
     <button class="close" onclick={closeModal}>&times;</button>
     <div class="input-list">
       <Input label="Enter your Zena's Name:" bind:value={name} />
