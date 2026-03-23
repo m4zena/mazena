@@ -33,10 +33,6 @@
 {/if}
 
 <style>
-  nav {
-    padding-bottom: 30px;
-  }
-
   h1 {
     margin: 0;
     line-height: 0.75em;
@@ -59,7 +55,6 @@
   }
 
   .register-zena {
-    /* padding: 10px 10px; */
     background: none;
     border: none;
     display: flex;
@@ -68,7 +63,8 @@
 
     &:hover {
       cursor: pointer;
-      background-color: darksalmon;
+      background-color: lightgray;
+      box-sizing: border-box;
     }
   }
 
