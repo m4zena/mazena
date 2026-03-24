@@ -1,21 +1,25 @@
 <script>
-  let { label, onClick } = $props();
+  let { children = () => {}, label = "", onClick } = $props();
 </script>
 
 <button onclick={onClick}>
   {label}
+  {@render children()}
 </button>
 
 <style>
   button {
     padding: 10px 10px;
     background-color: aliceblue;
-    border-radius: 8px;
     max-width: 150px;
-  }
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-  button:hover {
-    background-color: darksalmon;
-    cursor: pointer;
+    &:hover {
+      background-color: darksalmon;
+      cursor: pointer;
+    }
   }
 </style>
