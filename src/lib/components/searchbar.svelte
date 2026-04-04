@@ -1,7 +1,13 @@
-<label
-  >Search for a Zena:
-  <input list="widgets" name="zena" /></label
->
+<script>
+  import { SearchIcon } from "lucide-svelte";
+
+</script>
+
+<div class="searchbar">
+  <SearchIcon />
+  <input list="widgets" name="zena" />
+</div>
+
 <datalist id="widgets">
   <option value="libzena"> </option>
   <option value="coffeezena"> </option>
@@ -12,8 +18,23 @@
 </datalist>
 
 <style>
+  .searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
   input {
-    padding: 10px 10px;
-    border-radius: 8px;
+    background-color: transparent;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: none none solid none;
+
+    &:active,
+    &:focus {
+      background-color: white;
+      border: none;
+    }
   }
 </style>
