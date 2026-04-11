@@ -4,6 +4,7 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
+		"start": "HOST=0.0.0.0 PORT=5173 NODE_ENV=production node build",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",

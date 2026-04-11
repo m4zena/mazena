@@ -1,0 +1,12 @@
+services:
+  mazena-app:
+    image: mazena-app:latest
+    container_name: mazena-app
+    ports:
+      - 5173:5173
+    restart: always
+    volumes:
+      - ./data:/app
+  
+volumes:
+  data:
