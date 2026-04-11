@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Pride and Prejudice",
+    "author": ["Jane Austen"],
+    "progression": [
+      {
+        "page": 40,
+        "thoughts": "Elizabeth Bennet’s character is sharp and witty.",
+        "timestamp": 1774052000
+      },
+      {
+        "page": 150,
+        "thoughts": "Darcy’s letter completely shifts the perspective.",
+        "timestamp": 1774052600
+      }
+    ],
+    "total_pages": 279,
+    "final_thoughts": "A brilliant exploration of love and social class.",
+    "rating": 10,
+    "completed": 1774054000
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": ["J.D. Salinger"],
+    "progression": [
+      {
+        "page": 60,
+        "thoughts": "Holden’s voice is unique but a bit frustrating.",
+        "timestamp": 1774053000
+      }
+    ],
+    "total_pages": 234,
+    "final_thoughts": "A raw look into teenage alienation.",
+    "rating": 8,
+    "completed": 1774054500
+  },
+  {
+    "title": "Brave New World",
+    "author": ["Aldous Huxley"],
+    "progression": [
+      {
+        "page": 90,
+        "thoughts": "The engineered society feels disturbingly plausible.",
+        "timestamp": 1774053500
+      }
+    ],
+    "total_pages": 311,
+    "final_thoughts": "A thought-provoking dystopia about control and happiness.",
+    "rating": 9,
+    "completed": 1774055000
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "author": ["J.R.R. Tolkien"],
+    "progression": [
+      {
+        "page": 120,
+        "thoughts": "The journey begins to feel epic as the fellowship forms.",
+        "timestamp": 1774053800
+      }
+    ],
+    "total_pages": 423,
+    "final_thoughts": "An incredible start to an epic fantasy saga.",
+    "rating": 10,
+    "completed": 1774056000
+  }
+]
